@@ -58,7 +58,7 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 0;
+  margin-top: 0;
   padding: 0;
 }
 
@@ -80,6 +80,26 @@ ul {
 
 a {
   text-decoration: none;
+}
+
+.section {
+  padding: 48px 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1288px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.visually-hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }
 
 /* Section Title */
@@ -120,12 +140,38 @@ a {
   color: var(--accent-color);
 }
 
+/* Header */
+.header-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.header-nav {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.header-menu{
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  gap: 64px;
+}
+
 /* Hero Section */
+.hero-section {
+  padding: 272px 0;
+}
+
 .hero-title {
   color: var(--primary-color-light);
   text-align: center;
   font-size: 128px;
   font-weight: 900;
+  margin-bottom: 0;
 }
 
 .hero-title .accent {
@@ -133,19 +179,21 @@ a {
 }
 
 /* Advantages Section */
-.advantages-list {
-  width: 1440px;
-  padding: 16px 99px;
+.advantages-section {
   background-color: var(--primary-color);
-  color: var(--primary-color-light);
-  font-size: 20px;
-  font-weight: 300;
+  padding: 16px 0;
+}
+
+.advantages-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
 }
 
 .advantages-item {
   font-size: 20px;
   font-weight: 300;
-
+  color: var(--primary-color-light);
 }
 
 /* Arrow Up */
@@ -180,6 +228,28 @@ a {
 }
 
 /* Traditions Section */
+.traditions-section {
+  padding-top: 96px;
+}
+
+.traditions-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.traditions-content {
+  max-width: 708px;
+}
+
+.traditions-title {
+  margin-bottom: 42px;
+}
+
+.traditions-text {
+  margin-bottom: 42px;
+}
+
 .traditions-text .brand {
   color: var(--primary-color);
   font-weight: 600;
@@ -189,23 +259,63 @@ a {
   text-transform: uppercase;
 }
 
+.traditions-text.limited {
+  max-width: 340px;
+  margin-bottom: 0;
+}
+
 /* Chefs Section */
 .chefs-title {
+  margin-bottom: 80px;
+}
+
+.chef-title {
   font-size: 40px;
   font-weight: 600;
+  margin-bottom: 16px;
 }
 
 /* Formats Section */
+.formats-list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.format-card {
+  padding: 24px;
+  border-radius: 16px;
+  background: linear-gradient(180deg, rgba(49, 38, 26, 0.00) 55.21%, rgba(49, 38, 26, 0.71) 72.92%, #31261A 100%);
+}
+
+.formats-item {
+  flex-basis: calc((100% - 40px) / 3);
+}
+
 .formats-title {
+  margin-bottom: 80px;
+}
+
+.format-title {
   color: var(--primary-color-light);
   font-size: 24px;
   font-weight: 600;
+  margin-bottom: 16px;
 }
 
-.formats-text {
+.format-text {
   color: var(--primary-color-light);
   font-size: 14px;
   font-weight: 300;
+}
+
+/* Contacts Section */
+.contacts-title {
+  margin-bottom: 16px;
+}
+
+.contacts-text {
+  color: var(--accent-color);
 }
 
 /* Footer */
