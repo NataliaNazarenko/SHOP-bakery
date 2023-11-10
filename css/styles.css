@@ -169,7 +169,7 @@ a {
 /* Hero Section */
 .hero-section {
   padding: 272px 0;
-  background-image: linear-gradient(103deg, rgba(18, 18, 17, 0.78) 2.03%, rgba(18, 18, 17, 0.60) 58.46%, rgba(18, 18, 17, 0.00) 90.36%), url("../images/bg.jpg");
+  background-image: linear-gradient(103deg, rgba(18, 18, 17, 0.78) 2.03%, rgba(18, 18, 17, 0.60) 58.46%, rgba(18, 18, 17, 0.00) 90.36%), url('./images/bg.jpg');
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
@@ -365,7 +365,7 @@ a {
 /* Footer */
 .footer {
   background-color: var(--primary-color-dark);
-  background-image: url("../images/bg-footer.png");
+  background-image: url('./images/bg-footer.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
