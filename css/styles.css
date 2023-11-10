@@ -334,6 +334,26 @@ a {
   font-weight: 300;
 }
 
+/* Flip Button */
+
+.flip-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid var(--primary-color-dark);
+  fill: var(--primary-color-dark);
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.flip-button:hover {
+  background-color: var(--primary-color-dark);
+  fill: var(--primary-color-light);
+}
+
 /* Contacts Section */
 .contacts-title {
   margin-bottom: 16px;
