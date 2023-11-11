@@ -37,7 +37,9 @@
 }
 
 /* Base */
-* {
+*,
+::after,
+::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -80,6 +82,7 @@ ul {
 }
 
 a {
+  display: inline-block;
   text-decoration: none;
 }
 
@@ -275,8 +278,10 @@ a {
 
 /* Chefs Section */
 .chefs-title {
+  display: flex;
+  flex-direction: column;
   margin: 0 auto 80px;
-  max-width: 520px;
+  max-width: 535px;
 }
 
 .chefs-title::before,
@@ -298,7 +303,31 @@ a {
   box-shadow: -16px 16px 0 0 var(--primary-color-light), -16px 16px 0 2px var(--secondary-color-dark);
 }
 
+.chef-text p:not(:last-child){
+  margin-bottom: 24px;
+}
+
+.chefs-list {
+  display: flex;
+  gap: 40px 30px;
+  flex-wrap: wrap;
+}
+
+.chefs-item {
+  flex-basis: calc((100% - 30px) / 2);
+}
+
+.chef-card {
+  display: flex;
+  gap:  30px;
+}
 /* Formats Section */
+.formats-container {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
 .formats-list {
   display: flex;
   gap: 20px;
@@ -339,6 +368,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-shrink: 0;
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -354,21 +384,59 @@ a {
 }
 
 /* Contacts Section */
-.contacts-title {
+.contact-section {
+  padding-bottom: 96px;
+}
+
+.contact-container {
+  display: flex;
+  gap: 32px;
+}
+
+.contact-title {
   margin-bottom: 16px;
 }
 
-.contacts-text {
+.contact-text {
   color: var(--accent-color);
+}
+
+.contact-map {
+  flex-shrink: 0;
+  border-radius: 16px;
+  border: none;
 }
 
 /* Footer */
 .footer {
+  padding: 32px 0;
   background-color: var(--primary-color-dark);
   background-image: url("../images/bg-footer.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+.footer-container {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-nav,
+.footer-address {
+  display: flex;
+  flex-basis: 50%;
+  gap: 20px;
+}
+
+.footer-logo,
+.footer-menu {
+  flex-grow: 1;
+}
+
+.address-list,
+.address-info {
+  flex-grow: 1;
 }
 
 .address-link {
