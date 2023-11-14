@@ -26,7 +26,7 @@
               <li><a class="link" href="#contacts-section">Контакти</a></li>
             </ul>           
           </nav>
-          <button class="button" type="button">Замовити дзвінок</button>
+          <button class="button modal-btn-open" type="button">Замовити дзвінок</button>
         </div>        
       </div>
     </header>
@@ -71,7 +71,8 @@
       </section>
       <section class="section" id="chefs-section">
         <div class="container">
-          <h2 class="chefs-title section-title centered">Наші найкращі<span class="accent"> шеф - кухарі</span></h2>
+          <h2 class="chefs-title section-title centered">Наші найкращі<br>
+            <span class="accent">шеф - кухарі</span></h2>
           <ul class="chefs-list">
             <li class="chefs-item">
               <article class="chef-card">
@@ -253,6 +254,19 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop">
+      <div class="modal">
+        <button class="modal-btn-close" type="button">
+          <svg class="modal-icon-close">
+            <use
+              href="./images/icons-sprite.svg#icon-close"
+            ></use>
+          </svg>
+        </button>
+        <h3 class="mdal-title"></h3>
+      </div>
+    </div>
+    <script src="./js/Modal.js"></script>
     <script src="./js/ArrowUp.js"></script>
   </body>
 </html>
