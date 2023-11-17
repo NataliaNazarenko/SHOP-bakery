@@ -563,10 +563,17 @@ a {
 /* Form */
 .form-field {
   margin-bottom: 32px;
+  position: relative;
 }
 
 .form-label {
-  display: block;
+  position: absolute;
+  top: 16px;
+  left: 42px;
+  font-size: 16px;
+  line-height: 1.17;
+  color: var(--secondary-color-dark);
+  transition: transform 0.3s;
 }
 
 .form-input {
@@ -574,10 +581,38 @@ a {
   width: 100%;
   border-radius: 8px;
   border: 1px solid var(--secondary-color-dark);
+  color: var(--primary-color-dark);
   background-color: transparent;
+  font-size: 16px;
+  line-height: 1.17;
 }
 
 .form-input:focus {
-  border-color: var(--accent-color);
+  border-color: var(--primary-color);
+  outline: none;
 }
 
+.form-input:focus + .form-label {
+  transform: translate(-36px, -40px);
+  color: var(--primary-color-dark);
+}
+
+.form-button {
+  display: block;
+  margin: 0 auto 24px;
+}
+
+.form-terms {
+  max-width: 220px;
+  margin: 0 auto;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.form-terms-link {
+  color: var(--primary-color-dark);
+  text-underline-offset: 2px;
+  text-decoration: underline;
+}
