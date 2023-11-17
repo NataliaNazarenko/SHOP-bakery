@@ -548,6 +548,7 @@ a {
   border: none;
   cursor: pointer;
   fill: var(--primary-color-dark);
+  overflow-y: auto;
 }
 
 .modal-btn-close:hover {
@@ -560,7 +561,23 @@ a {
 }
 
 /* Form */
-
-.contact-form {
-
+.form-field {
+  margin-bottom: 32px;
 }
+
+.form-label {
+  display: block;
+}
+
+.form-input {
+  padding: 16px 42px;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid var(--secondary-color-dark);
+  background-color: transparent;
+}
+
+.form-input:focus {
+  border-color: var(--accent-color);
+}
+
