@@ -1,4 +1,3 @@
-
 @font-face {
   font-display: swap;
   font-family: 'Poppins';
@@ -560,6 +559,15 @@ a {
   height: 32px;
 }
 
+.modal-title {
+  color: var(--primary-color-dark);
+  text-align: center;
+  font-size: 64px;
+  font-weight: 900;
+  line-height: 1.3;
+  margin-bottom: 8px;
+}
+
 /* Form */
 .form-field {
   margin-bottom: 32px;
@@ -615,4 +623,14 @@ a {
   color: var(--primary-color-dark);
   text-underline-offset: 2px;
   text-decoration: underline;
+}
+
+.form-input::placeholder {
+  color: var(--secondary-color-dark);
+  font-size: 16px;
+  line-height: 1.17;
+}
+
+.form-input:focus::placeholder {
+  color: var(--primary-color-dark);
 }

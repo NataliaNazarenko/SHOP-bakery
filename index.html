@@ -7,7 +7,7 @@
     <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;900&display=swap" rel="stylesheet"> -->
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
     <header class="header">
@@ -170,32 +170,32 @@
               <p class="contact-text">Заповни форму, щоб ми звʼязались з тобою!</p>
               <form name="form" autocapitalize="off">
                 <div class="form-field">
-                  <input class="form-input" type="text" name="user-name" id="user-name">
-                  <label class="form-label" for="user-name">Ім’я</label>
+                  <input class="form-input" placeholder="Ім’я" type="text" name="user-name" id="user-name" required>
+                  <label class="form-label visually-hidden" for="user-name">Ім’я</label>
                 </div>
                 <div class="form-field">
-                  <input class="form-input" type="tel" name="user-tel" id="user-tel">
-                  <label class="form-label" for="user-tel">Телефон</label>
+                  <input class="form-input" placeholder="Телефон" type="tel" name="user-tel" id="user-tel" required pattern="^\+[0-9]{12}">
+                  <label class="form-label visually-hidden" for="user-tel">Телефон</label>
                 </div>
                 <div class="form-field">
-                  <input class="form-input" type="email" name="user-email" id="user-email">
-                  <label class="form-label" for="user-email">Електронна пошта</label>
+                  <input class="form-input" placeholder="Електронна пошта" type="email" name="user-email" id="user-email" required>
+                  <label class="form-label visually-hidden" for="user-email">Електронна пошта</label>
                 </div>
-              <button class="form-button button" type="submit">Замовити дзвінок</button>
-              <p class="form-terms">Натискаючи на кнопку я погоджуюсь 
-                <a class="form-terms-link" href=""> з політикою конфіденційності</a></p>
-          </form>
-            </div>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.1640531314047!2d30.491233500000003!3d50.4566697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637bfe1717%3A0x5370c2254ad1b952!2z0LLRg9C70LjRhtGPINCh0ZbRh9C-0LLQuNGFINCh0YLRgNGW0LvRjNGG0ZbQsiwgNTQsINCa0LjRl9CyLCAwMjAwMA!5e0!3m2!1suk!2sua!4v1699354045179!5m2!1suk!2sua"
-              width="603"
-              height="595"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-              class="contact-map"
-            ></iframe>
-          </div>
+                <button class="form-button button" type="submit">Замовити дзвінок</button>
+                <p class="form-terms">Натискаючи на кнопку я погоджуюсь 
+                  <a class="form-terms-link" href=""> з політикою конфіденційності</a></p>
+              </form>
+              </div>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.1640531314047!2d30.491233500000003!3d50.4566697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637bfe1717%3A0x5370c2254ad1b952!2z0LLRg9C70LjRhtGPINCh0ZbRh9C-0LLQuNGFINCh0YLRgNGW0LvRjNGG0ZbQsiwgNTQsINCa0LjRl9CyLCAwMjAwMA!5e0!3m2!1suk!2sua!4v1699354045179!5m2!1suk!2sua"
+                  width="603"
+                  height="595"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                  class="contact-map"
+                ></iframe>
+              </div>
         </div>
       </section>
       <button class="arrow-up" type="button">
@@ -279,22 +279,22 @@
         </button>
         <h2 class="modal-title">Замовити дзвінок</h2>
         <p class="modal-text">Залишіть заявку та наш спеціаліст зв'яжеться з Вами!</p>
-        <form name="form" autocapitalize="off" novalidate>
-              <div class="form-field">
-                <input class="form-input" type="text" name="user-name" id="user-name">
-                <label class="form-label" for="user-name">Ім’я</label>
-              </div>
-              <div class="form-field">
-                <input class="form-input" type="tel" name="user-tel" id="user-tel">
-                <label class="form-label" for="user-tel">Телефон</label>
-              </div>
-              <div class="form-field">
-                <input class="form-input" type="email" name="user-email" id="user-email">
-                <label class="form-label" for="user-email">Електронна пошта</label>
-              </div>
-            <button class="form-button button" type="submit">Замовити дзвінок</button>
-            <p class="form-terms">Натискаючи на кнопку я погоджуюсь 
-              <a class="form-terms-link" href=""> з політикою конфіденційності</a></p>
+        <form name="form" autocapitalize="off">
+            <div class="form-field">
+              <input class="form-input" type="text" name="user-name" id="user-name" required>
+              <label class="form-label" for="user-name">Ім’я</label>
+            </div>
+            <div class="form-field">
+              <input class="form-input" type="tel" name="user-tel" id="user-tel" required>
+              <label class="form-label" for="user-tel" pattern="^\+[0-9]{12}">Телефон</label>
+            </div>
+            <div class="form-field">
+              <input class="form-input" type="email" name="user-email" id="user-email" required>
+              <label class="form-label" for="user-email">Електронна пошта</label>
+            </div>
+          <button class="form-button button" type="submit">Замовити дзвінок</button>
+          <p class="form-terms">Натискаючи на кнопку я погоджуюсь 
+            <a class="form-terms-link" href=""> з політикою конфіденційності</a></p>
         </form>
       </div>
     </div>
