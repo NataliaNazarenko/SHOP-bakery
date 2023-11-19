@@ -1,0 +1,33 @@
+.button {
+    border-radius: 8px;
+    border: 2px solid var(--primary-color);
+    background-color: var(--primary-color);
+    padding: 16px 32px;
+    color: var(--primary-color-light);
+    font-weight: 600;
+    cursor: pointer;
+}
+  
+.button:hover {
+    background-color: transparent;
+    color: var(--accent-color);
+}
+
+.flip-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 1px solid var(--primary-color-dark);
+    fill: var(--primary-color-dark);
+    background-color: transparent;
+    cursor: pointer;
+}
+  
+.flip-button:hover {
+    background-color: var(--primary-color-dark);
+    fill: var(--primary-color-light);
+}

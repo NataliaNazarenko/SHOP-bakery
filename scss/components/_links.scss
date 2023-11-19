@@ -1,0 +1,10 @@
+.link {
+    color: var(--primary-color-light);
+    list-style: none;
+    transition: color 0.3s;
+    cursor: pointer;
+  }
+  
+.link:hover {
+    color: var(--primary-color);
+}
