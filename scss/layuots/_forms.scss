@@ -1,0 +1,76 @@
+.form {
+    &__field {
+        margin-bottom: 24px;
+        position: relative;
+    }
+
+    &__field--modal {
+        margin-bottom: 32px;
+    }
+
+    &__label {
+        position: absolute;
+        top: 16px;
+        left: 42px;
+        font-size: 16px;
+        line-height: 1.17;
+        color: var(--secondary-color-dark);
+        transition: transform 0.3s;
+    }
+
+    &__input {
+        padding: 16px 42px;
+        width: 100%;
+        border-radius: 8px;
+        border: 1px solid var(--secondary-color-dark);
+        color: var(--primary-color-dark);
+        background-color: transparent;
+        font-size: 16px;
+        line-height: 1.17;
+
+        &:focus {
+            border-color: var(--primary-color);
+            outline: none;
+        }
+          
+        &:focus + .form__label {
+            transform: translate(-36px, -40px);
+            color: var(--primary-color-dark);
+        }
+
+        &::placeholder {
+            color: var(--secondary-color-dark);
+            font-size: 16px;
+            line-height: 1.17;
+        }
+          
+        &:focus::placeholder {
+            color: var(--primary-color-dark);
+        }
+    }
+
+    &__button {
+        display: block;
+        margin: 0 auto 24px;
+    }
+
+    &__button-contact {
+        display: block;
+        margin: 0 auto 16px;
+    }
+
+    &__terms {
+        max-width: 220px;
+        margin: 0 auto;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 1.5;
+        text-align: center;
+    }
+      
+    &__link {
+        color: var(--primary-color-dark);
+        text-underline-offset: 2px;
+        text-decoration: underline;
+    }
+}

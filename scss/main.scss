@@ -2,29 +2,23 @@
 @import './utils/variables';
 @import './base';
 @import './utils/utils';
+@import './utils/text';
 
 @import './components/buttons';
 @import './components/arrow-up';
 @import './components/links';
-@import './components/header';
-@import './components/hero';
-@import './components/title-section';
-@import './components/advantages-section';
-@import './components/traditions-section';
-@import './components/chefs-section';
-@import './components/formats-section';
-@import './components/contact-section';
-@import './components/footer';
-@import './components/modal';
-@import './components/forms';
+@import './components/chef-card';
+@import './components/section';
+@import './components/format-card';
 
-.section {
-  padding: 48px 0;
-}
-
-.container {
-  width: 100%;
-  max-width: 1288px;
-  margin: 0 auto;
-  padding: 0 24px;
-}
+@import './layuots/header';
+@import './layuots/hero';
+@import './layuots/advantages-section';
+@import './layuots/traditions-section';
+@import './layuots/chefs-section';
+@import './layuots/formats-section';
+@import './layuots/contact-section';
+@import './layuots/footer';
+@import './layuots/modal';
+@import './layuots/forms';
+@import './layuots/container';

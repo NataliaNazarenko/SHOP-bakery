@@ -1,0 +1,89 @@
+.footer {
+    position: relative;
+    padding: 32px 0;
+    background-color: var(--primary-color-dark);
+    background-image: url("../images/bg-footer.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    &::before,
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        background-repeat: no-repeat;
+    }
+  
+    &::before {
+        width: 180px;
+        height: 120px;
+        left: 0;
+        background-image: url("../images/decor-bread-small.png");
+    }
+    
+    &::after {
+        width: 380px;
+        height: 190px;
+        right: 0;
+        background-image: url("../images/decor-bread.png");  
+    }
+
+    &__container {
+        display: flex;
+        gap: 20px;
+    }
+      
+    &__nav,
+    &__address {
+        display: flex;
+        flex-basis: 50%;
+        gap: 20px;
+    }
+      
+    &__logo,
+    &__menu {
+        flex-grow: 1;
+    }
+
+    &__list,
+    &__address-info {
+        flex-grow: 1;
+    }
+  
+    &__address-link {
+        color: var(--primary-color-light);
+        font-size: 16px;
+        font-weight: 300;
+
+        &:hover {
+            color: var(--primary-color);
+        }
+    }
+
+    &__address-copyright {
+        color: var(--secondary-color-dark);
+        font-size: 14px;
+    }
+      
+    &__address-icon {
+        width: 32px;
+        height: 32px;
+        fill: var(--primary-color-light);
+
+        &:hover {
+            fill: var(--primary-color);
+        }
+    }
+}
+  
+
+  
+
+  
+
+  
+
+  
+
+  
