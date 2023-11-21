@@ -23,6 +23,25 @@
         justify-content: center;
         flex-grow: 1;
         gap: 64px;
+
+        @media screen and (max-width: 1200px) {
+            display: none;
+        }
+    }
+
+    &__button {
+        @media screen and (max-width: 1200px) {
+            display: none;
+        }
+    }
+
+    &__burger {
+        display: none;
+
+        @media screen and (max-width: 1200px) {
+            display: block;
+        }
     }
   }
+  
   
