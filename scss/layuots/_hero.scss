@@ -1,6 +1,6 @@
 .hero-section {
     padding: 124px 0;
-    background-image: linear-gradient(103deg, rgba(18, 18, 17, 0.78) 2.03%, rgba(18, 18, 17, 0.60) 58.46%, rgba(18, 18, 17, 0.00) 90.36%), url("../../images/bg.jpg");
+    background-image: linear-gradient(103deg, rgba(18, 18, 17, 0.78) 2.03%, rgba(18, 18, 17, 0.60) 58.46%, rgba(18, 18, 17, 0.00) 90.36%), url("../images/bg.jpg");
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
@@ -10,7 +10,7 @@
     }
 
     @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-        background-image: linear-gradient(103deg, rgba(18, 18, 17, 0.78) 2.03%, rgba(18, 18, 17, 0.60) 58.46%, rgba(18, 18, 17, 0.00) 90.36%), url("../../images/bd@2x.jpg");
+        background-image: linear-gradient(103deg, rgba(18, 18, 17, 0.78) 2.03%, rgba(18, 18, 17, 0.60) 58.46%, rgba(18, 18, 17, 0.00) 90.36%), url("../images/bg@2x.jpg");
     }
 
     &__title {
