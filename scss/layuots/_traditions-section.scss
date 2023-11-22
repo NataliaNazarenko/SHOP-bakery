@@ -1,5 +1,9 @@
 .traditions-section {
-    padding-top: 96px;
+    padding-top: 40px;
+
+    @media screen and (min-width: $bp-tablet) {
+        padding-top: 96px;
+    }
 
     &__container {
         display: flex;
