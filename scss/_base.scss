@@ -10,9 +10,14 @@ body {
   color: var(--primary-color-dark);
   background-color: var(--primary-color-light);
   font-family: 'Poppins', sans-serif;
-  font-size: 18px;
-  font-weight: 400;
+  font-size: 16px;
+  font-weight: 300;
   line-height: 1.5;
+
+  @media screen and (min-width: $bp-tablet) {
+    font-size: 18px;
+    font-weight: 400;
+  }
 }
 
 p,

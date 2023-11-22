@@ -1,0 +1,34 @@
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary-color-light);
+    transform: translateX(100%);
+    transition: transform 0.3s;
+
+    &.is-open {
+        transform: translateX(0);
+    }
+
+    &__btn-close {
+        position: absolute;
+        top: 16px;
+        right: 24px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        fill: var(--primary-color-dark);
+        overflow-y: auto;
+
+        &:hover {
+            fill: var(--primary-color);
+        }
+    }
+
+    &__icon-close {
+        width: 24px;
+        height: 24px;
+    }
+}

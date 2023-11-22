@@ -4,6 +4,7 @@
     &__container {
         display: flex;
         justify-content: space-between;
+        align-items: flex-start;
         gap: 40px;
     }
       
@@ -23,6 +24,15 @@
         &--limited {
         max-width: 340px;
         margin-bottom: 0;
+        }
+    }
+
+    &__img {
+        display: none;
+
+        @media screen and (min-width: $bp-tablet) {
+            display: block;
+            border-radius: 400px 400px 0px 0px;
         }
     }
 }

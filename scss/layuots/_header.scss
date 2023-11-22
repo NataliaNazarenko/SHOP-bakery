@@ -3,7 +3,11 @@
     top: 0;
     left: 0;
     width: 100%;
-    padding-top: 32px;
+    padding-top: 16px;
+
+    @media screen and (min-width: $bp-desktop) {
+        padding-top: 32px;
+    }
 
     &__container {
         display: flex;
@@ -19,27 +23,35 @@
     }
       
     &__menu{
-        display: flex;
-        justify-content: center;
-        flex-grow: 1;
-        gap: 64px;
+        display: none;
 
-        @media screen and (max-width: 1200px) {
-            display: none;
+        @media screen and (min-width: $bp-desktop) {
+            display: flex;
+            justify-content: center;
+            flex-grow: 1;
+            gap: 64px;
         }
     }
 
     &__button {
-        @media screen and (max-width: 1200px) {
-            display: none;
+        display: none;
+
+        @media screen and (min-width: $bp-desktop) {
+            display: block;
         }
     }
 
     &__burger {
-        display: none;
-
-        @media screen and (max-width: 1200px) {
-            display: block;
+        width: 24px;
+        height: 24px;
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        fill: var(--primary-color-light);
+        cursor: pointer;
+        
+        @media screen and (min-width: $bp-desktop) {
+            display: none;
         }
     }
   }
