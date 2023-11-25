@@ -128,7 +128,8 @@
         <div class="container">
           <h2 class="formats-section__title section__title section__title--centered">Формати</h2>
           <div class="formats-section__slider">
-            <button type="button" class="flip-button prev">
+        margin-bottom: 32px;
+            <button type="button" class="flip-button prev formats-section__btn">
               <svg width="44px" height="44px">
                 <use
                   href="./images/icons-sprite.svg#icon-arrow"
@@ -136,7 +137,7 @@
               </svg>
             </button>
             <div class="formats-section__container swiper-container">
-              <ul class="swiper-wrapper">
+              <ul class="formats-section__list swiper-wrapper">
                 <li class="swiper-slide">
                   <article class="format-card">
                       <img class="format-card__img" src="./images/walrus.jpg" alt="Walrus format">
@@ -211,13 +212,13 @@
                 </li>
               </ul>
               <div class="pagination">
-                <button class="pagination__btn pagination__btn--active" type="button" aria-label="Go to slider 1"></button>
-                <button class="pagination__btn pagination__btn--active" type="button" aria-label="Go to slider 2"></button>
-                <button class="pagination__btn pagination__btn--active" type="button" aria-label="Go to slider 3"></button>
-                <button class="pagination__btn pagination__btn--active" type="button" aria-label="Go to slider 4"></button>
+                <span class="pagination__btn pagination__btn--active"></span>
+                <span class="pagination__btn pagination__btn--active"></span>
+                <span class="pagination__btn pagination__btn--active"></span>
+                <span class="pagination__btn pagination__btn--active"></span>
               </div>
             </div>
-            <button type="button" class="flip-button next">
+            <button type="button" class="flip-button next formats-section__btn">
               <svg width="44px" height="44px">
                 <use
                   href="./images/icons-sprite.svg#icon-arrow-1"

@@ -12,4 +12,16 @@
     &__container {
         overflow: hidden;
     }
+
+    &__list {
+        margin-bottom: 32px;
+    }
+
+    &__btn {
+        display: none;
+
+        @media screen and (min-width: $bp-tablet) {
+           display: flex;
+        }
+    }
 }
