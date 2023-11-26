@@ -3,7 +3,7 @@
     align-items: center;
     justify-content: center;
     position: fixed;
-    padding: 20px 0;
+    padding: 20px;
     top: 0;
     right: 0;
     bottom: 0;
@@ -26,9 +26,13 @@
     max-width: 880px;
     height: 100%;
     max-height: 880px;
-    padding: 128px;
+    padding: 48px;
     border-radius: 32px;
     background-color: var(--primary-color-light);
+
+    @media screen and (min-width: $bp-tablet) {
+        padding: 128px;
+     }
 
     &__btn-close {
         position: absolute;

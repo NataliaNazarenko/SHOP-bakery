@@ -128,7 +128,6 @@
         <div class="container">
           <h2 class="formats-section__title section__title section__title--centered">Формати</h2>
           <div class="formats-section__slider">
-        margin-bottom: 32px;
             <button type="button" class="flip-button prev formats-section__btn">
               <svg width="44px" height="44px">
                 <use
@@ -254,8 +253,6 @@
               </div>
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.1640531314047!2d30.491233500000003!3d50.4566697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637bfe1717%3A0x5370c2254ad1b952!2z0LLRg9C70LjRhtGPINCh0ZbRh9C-0LLQuNGFINCh0YLRgNGW0LvRjNGG0ZbQsiwgNTQsINCa0LjRl9CyLCAwMjAwMA!5e0!3m2!1suk!2sua!4v1699354045179!5m2!1suk!2sua"
-                  width="603"
-                  height="595"
                   allowfullscreen=""
                   loading="lazy"
                   referrerpolicy="no-referrer-when-downgrade"
@@ -295,19 +292,21 @@
             </ul>
           </nav>
           <address class="footer__address">
-            <ul class="footer__address-list">
-              <li>
-                <a class="footer__address-link" href="tel:+380961113507">+ 38 (096) 111 35 07</a>
-              </li>
-              <li>
-                <a class="footer__address-link" href="mailto:shopbakery@gmail.com">shopbakery@gmail.com</a>
-              </li>
-              <li>
-                <a class="footer__address-link" href="https://maps.app.goo.gl/jxz8nroeP9KBY1YF8" target="_blank"
-                  >Україна, м. Київ, вул. Січових Стрільців 54</a
-                >
-              </li>
-              <li>
+            <div class="footer__address-contacts">
+              <ul class="footer__address-list">
+                <li>
+                  <a class="footer__address-link" href="tel:+380961113507">+ 38 (096) 111 35 07</a>
+                </li>
+                <li>
+                  <a class="footer__address-link" href="mailto:shopbakery@gmail.com">shopbakery@gmail.com</a>
+                </li>
+                <li>
+                  <a class="footer__address-link" href="https://maps.app.goo.gl/jxz8nroeP9KBY1YF8" target="_blank"
+                    >Україна, м. Київ, вул. Січових Стрільців 54</a
+                  >
+                </li>
+              </ul>
+              <div>
                 <a href="">
                   <svg class="footer__address-icon">
                     <use
@@ -315,8 +314,6 @@
                     ></use>
                   </svg>
                 </a>
-              </li>
-              <li>
                 <a href="">
                   <svg class="footer__address-icon">
                     <use
@@ -324,8 +321,9 @@
                     ></use>
                   </svg>
                 </a>
-              </li>
-            </ul>
+              </div>
+            </div>
+            
             <div class="footer__address-info">
               <a href="" class="footer__address-link" target="_blank">Політика конфіденційності</a>
               <p class="footer__address-copyright">&copy; 2022 Дані захищені</p>

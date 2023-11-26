@@ -31,14 +31,26 @@
 
     &__container {
         display: flex;
+        flex-direction: column;
         gap: 20px;
+
+        @media screen and (min-width: $bp-tablet) {
+            flex-direction: row;
+        }
     }
       
     &__nav,
     &__address {
+        text-align: center;
         display: flex;
-        flex-basis: 50%;
+        flex-direction: column;
         gap: 20px;
+
+        @media screen and (min-width: $bp-tablet) {
+            flex-direction: row;
+            flex-basis: 50%;
+            text-align: left;
+        }
     }
       
     &__logo,
